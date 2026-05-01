@@ -1,95 +1,141 @@
-<!DOCTYPE html>
-<html lang="en"> 
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo</title>
-    <link rel="preload" href="css/styles.css" as="style"/>
-    <link href="css/styles.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Web</title>
+
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1 class="titulo"">Desarrollo de Aplicaciones Web <span> Website </span> </h1> 
-    </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="unidades.html">Unidades</a>
-        <a href="calificaciones.html">Calificaciones</a>
-    </nav>
-    <img src="img/deweb.jpg"> </img>
-    <section>
-        <p>Luis Fernando Naranjo Ramírez</p>
-        <img src="icons/contactar.svg" alt="">
-        <p>Guayaquil, Ecuador</p>
-        <a href="#">Contactar</a>
+
+<header>
+  <h1 class="titulo">
+    Desarrollo de Aplicaciones Web <span>Website</span>
+  </h1>
+</header>
+
+<div class="nav-bg">
+  <nav class="navegacion-principal contenedor">
+    <a href="index.html">Inicio</a>
+    <a href="unidades.html">Unidades</a>
+    <a href="calificaciones.html">Calificaciones</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="contenido-hero">
+
+    <!-- Imagen principal -->
+    <img class="hero-img" src="img/deweb.jpg" alt="Desarrollo Web">
+
+    <h2>Luis Fernando Naranjo Ramírez</h2>
+
+    <div class="ubicacion">
+      <img src="icons/contactar.svg" alt="Contacto">
+      <p>Guayaquil, Ecuador</p>
+    </div>
+
+    <a class="boton" href="#">Contactar</a>
+
+  </div>
+</section>
+
+<main class="contenedor sombra">
+  <h2>Tecnologías</h2>
+
+  <div class="lenguajes">
+
+    <section class="lenguaje">
+      <div class="iconos">
+        <img src="icons/html.svg" alt="HTML">
+      </div>
+      <h3>HTML</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate efficitur diam, vel mollis leo.
+        </p>
     </section>
 
-    <main>
-        <h2>Tecnologías</h2>
-
-        <section>
-            <h3>HTML</h3>
-            <p>
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...
-            </p>
-        </section>
-
-        <section>
-            <h3>CSS</h3>
-            <p>
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...html.
-            </p>
-        </section>
-
-        <section>
-            <h3>JavaScript</h3>
-            <p>
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...css.
-            </p>
-        </section>
-
-        <section>
-            <h3>PHP</h3>
-            <p>
-                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet... php.
-            </p>
-        </section>
-    </main>
-
-    <section>
-        <h2>Contacto</h2>
-
-        <form>
-            <fieldset>
-            <legend>Contactanos</legend>
-            
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Nombre"/>
-            </div>
-            <div>
-                <label>Correo</label>
-                <input type="email"/>
-            </div>
-            <div>
-                <label>Telefono</label>
-                <input type="tel" />
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </div>
-            </fieldset>
-        </form>
-
+    <section class="lenguaje">
+      <div class="iconos">
+        <img src="icons/css.svg" alt="CSS">
+      </div>
+      <h3>CSS</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate efficitur diam, vel mollis leo.
+        </p>
     </section>
-    
 
-    <footer>
-        <p>Todos los derechos reservados. Luis Fernando Naranjo Ramírez</p>
-    </footer>
+    <section class="lenguaje">
+      <div class="iconos">
+        <img src="icons/javascript.svg" alt="JavaScript">
+      </div>
+      <h3>JavaScript</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate efficitur diam, vel mollis leo.</p>
+    </section>
+
+    <section class="lenguaje">
+      <div class="iconos">
+        <img src="icons/php.svg" alt="PHP">
+      </div>
+      <h3>PHP</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate efficitur diam, vel mollis leo.</p>
+    </section>
+
+  </div>
+
+  <section>
+    <h2>Contacto</h2>
+
+    <form class="formulario">
+      <fieldset>
+        <legend>Contáctanos</legend>
+
+        <div class="campo">
+          <label>Nombre</label>
+          <input type="text" placeholder="Nombre">
+        </div>
+
+        <div class="campo">
+          <label>Correo</label>
+          <input type="email" placeholder="Correo">
+        </div>
+
+        <div class="campo">
+          <label>Teléfono</label>
+          <input type="tel" placeholder="Teléfono">
+        </div>
+
+        <div class="campo">
+          <label>Mensaje</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="alinear-derecha">
+          <input type="submit" value="Enviar" class="boton">
+        </div>
+
+      </fieldset>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>Todos los derechos reservados. Luis Fernando Naranjo Ramírez</p>
+</footer>
+
 </body>
 </html>
