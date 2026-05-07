@@ -1,141 +1,203 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Web</title>
+  <!-- Idioma -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive -->
 
-  <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="stylesheet" href="css/normalize.css">
+    <title>Portafolio Web</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preload" href="css/styles.css" as="style">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- CSS -->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<header>
-  <h1 class="titulo">
-    Desarrollo de Aplicaciones Web <span>Website</span>
-  </h1>
-</header>
+  <body>
 
-<div class="nav-bg">
-  <nav class="navegacion-principal contenedor">
-    <a href="index.html">Inicio</a>
-    <a href="unidades.html">Unidades</a>
-    <a href="calificaciones.html">Calificaciones</a>
-  </nav>
-</div>
+    <!-- Header -->
+    <header>
+      <h1 class="titulo">
+        Desarrollo de Aplicaciones Web <span>Website</span>
+      </h1>
+    </header>
 
-<section class="hero">
-  <div class="contenido-hero">
-
-    <!-- Imagen principal -->
-    <img class="hero-img" src="img/deweb.jpg" alt="Desarrollo Web">
-
-    <h2>Luis Fernando Naranjo Ramírez</h2>
-
-    <div class="ubicacion">
-      <img src="icons/contactar.svg" alt="Contacto">
-      <p>Guayaquil, Ecuador</p>
+    <!-- Navegación -->
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="unidades.html">Unidades</a>
+        <a href="calificaciones.html">Calificaciones</a>
+      </nav>
     </div>
 
-    <a class="boton" href="#">Contactar</a>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="contenido-hero">
 
-  </div>
-</section>
+        <!-- Imagen principal -->
+        <img class="hero-img" src="img/deweb.jpg" alt="Desarrollo Web" />
 
-<main class="contenedor sombra">
-  <h2>Tecnologías</h2>
+        <h2>Luis Fernando Naranjo Ramírez</h2>
 
-  <div class="lenguajes">
+        <div class="ubicacion">
+          <img src="icons/contactar.svg" alt="Contacto" />
+          <p>Guayaquil, Ecuador</p>
+        </div>
 
-    <section class="lenguaje">
-      <div class="iconos">
-        <img src="icons/html.svg" alt="HTML">
+        <a class="boton" href="#">Contactar</a>
+
       </div>
-      <h3>HTML</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate efficitur diam, vel mollis leo.
-        </p>
     </section>
 
-    <section class="lenguaje">
-      <div class="iconos">
-        <img src="icons/css.svg" alt="CSS">
+    <!-- Main -->
+    <main class="contenedor sombra">
+
+      <h2>Tecnologías</h2>
+
+      <div class="lenguajes">
+
+        <!-- HTML -->
+        <section class="lenguaje">
+          <h3>HTML</h3>
+
+          <div class="iconos">
+            <img src="icons/html.svg" alt="HTML" />
+          </div>
+
+          <p>
+            HTML es el lenguaje utilizado para crear la estructura de las
+            páginas web mediante etiquetas, textos, imágenes y enlaces.
+          </p>
+        </section>
+
+        <!-- CSS -->
+        <section class="lenguaje">
+          <h3>CSS</h3>
+
+          <div class="iconos">
+            <img src="icons/css.svg" alt="CSS" />
+          </div>
+
+          <p>
+            CSS permite diseñar y dar estilos visuales a una página web,
+            mejorando colores, tamaños, posiciones y animaciones.
+          </p>
+        </section>
+
+        <!-- JavaScript -->
+        <section class="lenguaje">
+          <h3>JavaScript</h3>
+
+          <div class="iconos">
+            <img src="icons/javascript.svg" alt="JavaScript" />
+          </div>
+
+          <p>
+            JavaScript agrega interactividad a las páginas web mediante eventos,
+            validaciones, efectos dinámicos y funciones.
+          </p>
+        </section>
+
+        <!-- PHP -->
+        <section class="lenguaje">
+          <h3>PHP</h3>
+
+          <div class="iconos">
+            <img src="icons/php.svg" alt="PHP" />
+          </div>
+
+          <p>
+            PHP es un lenguaje de programación para el desarrollo backend,
+            utilizado para crear sistemas web dinámicos y conectados a bases de
+            datos.
+          </p>
+        </section>
+
       </div>
-      <h3>CSS</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate efficitur diam, vel mollis leo.
-        </p>
-    </section>
 
-    <section class="lenguaje">
-      <div class="iconos">
-        <img src="icons/javascript.svg" alt="JavaScript">
-      </div>
-      <h3>JavaScript</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate efficitur diam, vel mollis leo.</p>
-    </section>
+      <!-- Contacto -->
+      <section>
+        <h2>Contacto</h2>
 
-    <section class="lenguaje">
-      <div class="iconos">
-        <img src="icons/php.svg" alt="PHP">
-      </div>
-      <h3>PHP</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate efficitur diam, vel mollis leo.</p>
-    </section>
+        <form class="formulario">
 
-  </div>
+          <fieldset>
 
-  <section>
-    <h2>Contacto</h2>
+            <legend>Contáctanos</legend>
 
-    <form class="formulario">
-      <fieldset>
-        <legend>Contáctanos</legend>
+            <div class="contenedor-campos">
 
-        <div class="campo">
-          <label>Nombre</label>
-          <input type="text" placeholder="Nombre">
-        </div>
+              <div class="campo">
+                <label>Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Nombre"
+                />
+              </div>
 
-        <div class="campo">
-          <label>Correo</label>
-          <input type="email" placeholder="Correo">
-        </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Correo"
+                />
+              </div>
 
-        <div class="campo">
-          <label>Teléfono</label>
-          <input type="tel" placeholder="Teléfono">
-        </div>
+              <div class="campo">
+                <label>Teléfono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Teléfono"
+                />
+              </div>
 
-        <div class="campo">
-          <label>Mensaje</label>
-          <textarea></textarea>
-        </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
 
-        <div class="alinear-derecha">
-          <input type="submit" value="Enviar" class="boton">
-        </div>
+            </div>
 
-      </fieldset>
-    </form>
-  </section>
+            <div class="enviar">
+              <input
+                class="boton"
+                type="submit"
+                value="Enviar"
+              />
+            </div>
 
-</main>
+          </fieldset>
 
-<footer>
-  <p>Todos los derechos reservados. Luis Fernando Naranjo Ramírez</p>
-</footer>
+        </form>
+      </section>
 
-</body>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Todos los derechos reservados.
+        Luis Fernando Naranjo Ramírez
+      </p>
+    </footer>
+
+  </body>
 </html>
